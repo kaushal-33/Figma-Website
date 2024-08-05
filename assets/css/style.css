@@ -1,0 +1,414 @@
+* {
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+.main-font {
+    font-family: 'Montagu Slab' !important;
+}
+
+main {
+    overflow-x: hidden;
+}
+.py-125 {
+    padding-block: 125px;
+}
+
+.p-125 {
+    padding: 125px;
+}
+
+.pb-100{
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.letter-spacing {
+    letter-spacing: 5px;
+}
+
+.bg-cream {
+    background-color: #f4ece2;
+}
+
+.text-cream {
+    color: #f9bf77;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.list-circle {
+    list-style: disc !important;
+}
+
+.display-none {
+    display: none;
+}
+
+.hidden-left {
+    left: -100% !important;
+}
+
+.line-height{
+    line-height: 35px;
+}
+
+/* header */
+
+#menu-btn {
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: black;
+    border-radius: 50%;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-dark.contact-btn {
+    padding: 10px 40px;
+    border-radius: 0;
+    position: relative;
+    border: 2px solid black;
+}
+
+.contact-btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    right: 0;
+    top: 0;
+    transition: .3s all ease-in-out;
+    opacity: 0;
+}
+
+.contact-btn:hover span {
+    color: black;
+}
+
+.contact-btn:hover::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+
+.hover-btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-bottom: 2px solid black;
+    bottom: -2px;
+    right: 0;
+    transition: .3s all ease-in-out;
+}
+
+.hover-btn:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* aside-bar */
+
+aside {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.619);
+}
+
+.aside-bar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    transition: .4s all ease-in-out;
+}
+
+#menu-hide-btn {
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: black;
+    border-radius: 50%;
+    color: #f4ece2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* hero-section */
+
+.shape-img {
+    position: absolute;
+    right: 300px;
+    top: 130px;
+}
+
+/* about section */
+
+.bg-shape {
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}
+
+.img-1 {
+    max-width: 350px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.img-2 {
+    max-width: 450px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.change-btn {
+    width: 50px;
+    aspect-ratio: 1;
+    background-color: black;
+    border-radius: 50%;
+    color: #f4ece2;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* feature section */
+
+.feature-card {
+    transition: .3s all ease-in-out;
+    padding: 50px;
+}
+
+.feature-card:hover{
+    background-color: #f9be7756;
+}
+
+.feature-card:hover .hover-img{
+    opacity: 1;
+}
+
+.feature-img {
+    max-width: 100px;
+    transition: .3s all ease-in-out;
+}
+
+.hover-img {
+    max-width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+/* our video section */
+
+.bg-video{
+    background-image: url(../images/2-puffs.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.bg-video::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.477);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.play-btn{
+    width: 120px;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+}
+
+/* product section */
+
+.bg-image{
+    background-image: url(../images/Bitmap\ \(1\).png);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 250px !important;
+}
+
+.hover-product{
+    transition: .3s all ease-in-out;
+    position: relative;
+}
+.hover-product::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: #f9be77e7;
+    bottom: 0;
+    left: 0;
+    transition: .3s all ease-in-out;
+}
+
+.product-card:hover .hover-product::after {
+    height: 100%;
+    top: 0;
+}
+
+/* process-section */
+
+.process-card{
+    transition: .3s all ease-in-out;
+    overflow: hidden;
+}
+
+.process-card:hover{
+    background-color: #f9bf77 !important;
+    transform: scale(1.1, 1.1);
+    position: relative;
+    z-index: 1;
+}
+
+.process-card:hover .hover-img{
+    opacity: 1;
+}
+
+.shape-3{
+    position: absolute;
+    left: -88px;
+    top: -60px;
+}
+/* testimonial section */
+
+.customer-img{
+    width: 80px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.review-card{
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+}
+.review-card:hover{
+    background-color: #fbb65f;
+}
+
+.review-card:hover span{
+    color: yellow !important;
+}
+.review-card:hover p{
+    color: aliceblue !important;
+}
+
+.swiper-pagination span{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+}
+
+/* contact section */
+
+.contact-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+
+.social-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #fbb65f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease-in-out;
+}
+.social-icon:hover{
+    transform: scale(1.1, 1.1);
+    font-size: 25px !important;
+}
+
+.padding-hover{
+    transition: .3s all ease-in-out;
+}
+.padding-hover:hover{
+    padding-left: 5px;
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #fbb65f !important;
+}
+
+/* media-query */
+
+@media (max-width:1400px) {
+    h1 {
+        font-size: 70px !important;
+    }
+}
+
+@media (max-width:1280px) {
+    h1 {
+        font-size: 50px !important;
+    }
+}
+
+@media (max-width:992px) {
+    h1 {
+        font-size: 90px !important;
+    }
+}
+
+@media (max-width:768px) {}
+
+@media (max-width:576px) {
+    h1 {
+        font-size: 50px !important;
+    }
+
+    .p-125 {
+        padding: 50px;
+    }
+
+    .contact-btn {
+        padding-inline: 20px !important;
+    }
+}
